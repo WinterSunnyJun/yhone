@@ -1,0 +1,650 @@
+@media screen and (min-width: 320px) and (max-width: 768px){
+    body,html{
+        overflow-x: hidden;
+    }
+    body{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .pop{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .top-wrapper{
+        display: none;
+    }
+    .footer-wrapper{
+        display: none;
+    }
+    /*nav*/
+    .sj-nav{
+        position: relative;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 5px 2% 5px;
+        box-sizing: border-box;
+        background: #f5f5f5;
+        z-index: 5;
+    }
+    .sj-logo{
+        float: left;
+        width: 62px;
+        height: 30px;
+    }
+    .sj-nav-bar{
+        float: right;
+        width: 40px;
+        height: 30px;
+    }
+    .sj-nav-bar span{
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin: 2px auto 5px;
+        background: #4d4d4d;
+        border-radius: 20px;
+    }
+    .sj-nav-menu{
+        position: absolute;
+        display: none;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background: #f5f5f5;
+    }
+    .sj-nav-menu li{
+        text-indent: 5%;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+    }
+    .sj-nav-menu li a{
+        color: #999999;
+    }
+/*footer*/
+    .pho_footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: #64b0b9;
+    }
+    .pho_footer ul{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pho_footer ul li{
+        float: left;
+        width: 33.33%;
+        height: 100%;
+    }
+    .fIcon_pic{
+        width: 35%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .fIcon_text{
+        width: 100%;
+        height: 20px;
+        line-height: 16px;
+        color: #FFFFFF;
+        font-size: 14px;
+        text-align: center;
+    }
+    /*首页*/
+    .banner-list{
+        height: 100px;
+    }
+    .banner-btn{
+        bottom: 10px;
+    }
+    .ourDynamics{
+        margin-top: 20px;
+    }
+    .ourDynamics-title{
+        width: 100%;
+    }
+    .ourDynamics-title .ch{
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+    .ourDynamics-bg{
+        margin-top: 10px;
+        box-sizing: border-box;
+        padding: 0 2%;
+        height: auto;
+    }
+    .ourDynamics-body{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .yewu-Dynamic{
+        width: 100%;
+        float: none;
+    }
+    .yewu-Dynamic-list{
+        margin-top: 20px;
+    }
+    .yewu-Dynamic-list .btn{
+        width: 100%;
+    }
+    .yewu-Dynamic-list .btn li{
+        width: 33%;
+    }
+    .yewu-Dynamic-list .list{
+        margin-top: 20px;
+    }
+    .yewu-item{
+        display: none;
+    }
+    .yewu-item:nth-child(1),
+    .yewu-item:nth-child(2){
+        display: block;
+    }
+    .yewu-item-pic{
+        width: 30%;
+    }
+    .yewu-item-text{
+        width: 66%;
+    }
+    .yewu-item-icon{
+        display: none;
+    }
+    .yewu-item-title h3{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 65%;
+    }
+    .index-new{
+        width: 100%;
+        float: none;
+    }
+    .indexNew-list ul{
+        margin-top: 20px;
+    }
+    .indexNew-list ul li{
+        display: none;
+        margin-bottom: 20px;
+    }
+    .indexNew-list ul li:nth-child(1),
+    .indexNew-list ul li:nth-child(2){
+        display: block;
+    }
+    .indexNew-item-time{
+        width: 50px;
+        height: 50px;
+    }
+    .indexNew-item-time p{
+        font-size: 12px;
+    }
+    .indexNew-data{
+        font-size: 20px;
+    }
+    .indexNew-item-text{
+        width: 80%;
+    }
+    .OurAdv{
+        margin-top: 20px;
+        box-sizing: border-box;
+        padding: 0 2%;
+    }
+    .OurAdv-title{
+        width: 100%;
+    }
+    .OurAdv-title .ch{
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+    .OurAdv-title-bg{
+        margin-top: 20px;
+    }
+    .OurAdv-pic-title{
+        display: none;
+    }
+    .OurAdv-list{
+        width: 100%;
+        margin-top: 0;
+    }
+    .OurAdv-icon-list{
+        float: none;
+        width: 100%;
+        border-right: none;
+    }
+    .ouradv-icon{
+        width:60px;
+        height: 60px;
+    }
+    .OurAdv-icon-list li p{
+        margin: 10px 0;
+    }
+    .OurAdv-order-list{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+    .OurAdv-order-list li{
+        margin-bottom: 20px;
+    }
+    .yewu-Domain{
+        margin-top: 20px;
+    }
+    .yewu-Domain-title{
+        width: 100%;
+    }
+    .yewu-Domain-title .ch{
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+    .yewu-Domain-list{
+        margin-top: 20px;
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+    .Lawyer-info{
+        padding: 0 2%;
+        box-sizing: border-box;
+        margin-top: 120px;
+    }
+    .Lawyer-info-title{
+        width: 100%;
+    }
+    .Lawyer-info-title .ch{
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+    .Lawyer-bg{
+        margin-top: 20px;
+    }
+    .Lawyer-slogan{
+        margin-top: 10px;
+    }
+    .Lawyer-person-info{
+        width: 100%;
+    }
+    .Lawyer-photo{
+        width: 100%;
+        float: none;
+    }
+    .Lawyer-resume{
+        width: 100%;
+        float: none;
+    }
+    .Lawyer-resume h3{
+        margin-top: 10px;
+    }
+    .Lawyer-resume p{
+        margin: 10px auto;
+    }
+    .Lawyer-list{
+        width: 100%;
+    }
+    .Lawyer-list-box{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .lawyer-left{
+        left: 0;
+    }
+    .lawyer-right{
+        right: 0;
+    }
+    .Cooperative{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+    .Cooperative-title{
+        width: 100%;
+    }
+    .Cooperative-title .ch{
+        width: 80%;
+        margin: 0 auto;
+        background-size: 100%;
+        font-size: 24px;
+    }
+    .Cooperative-list ul{
+        margin-top: 20px;
+    }
+    .Cooperative-list ul > li{
+        display: none;
+    }
+    .Cooperative-list ul > li:first-child{
+        display: block;
+    }
+    .Cooperative-pic-list li{
+        width: 20%;
+        height: auto;
+        padding: 0;
+    }
+    /*业务领域*/
+    .subpage-banner{
+        height: auto;
+    }
+    .sub-yewuDomain-wrapper{
+        margin-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 2%;
+    }
+    .sub-yewuDomain-title{
+        width: 100%;
+    }
+    .sub-yewuDomain-title .ch{
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+    .sub-yewuDomain-list{
+        margin-top: 20px;
+    }
+    .sub-yewuDomain-list ul li{
+        display: none;
+        width:50%;
+        padding: 0 5%;
+    }
+    .sub-yewuDomain-list ul li:nth-child(1),
+    .sub-yewuDomain-list ul li:nth-child(2),
+    .sub-yewuDomain-list ul li:nth-child(3),
+    .sub-yewuDomain-list ul li:nth-child(4),
+    .sub-yewuDomain-list ul li:nth-child(5),
+    .sub-yewuDomain-list ul li:nth-child(6){
+        display: block;
+    }
+    .subyewu-item-pic{
+        height: 86px;
+    }
+    .sub-yewuDomain-list ul li:nth-child(3){
+        padding:0 5%;
+    }
+    .subyewu-item-text{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .sub-yewuDomain-list ul li h3{
+        margin-top: 5px;
+    }
+    .subyewu-mask-plus{
+        margin: 10px auto 0;
+    }
+    /*专业团队*/
+    .sub-content{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 2%;
+    }
+    .sub-sidebar{
+        margin-top: 0;
+        width: 100%;
+        float: none;
+    }
+    .sub-sidebar ul:after{
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    .sub-sidebar ul li{
+        float: left;
+        width: 33%;
+        box-sizing: border-box;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #666666;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .sub-content-body{
+        width: 100%;
+        float: none;
+    }
+    .sub-localtion p{
+        display: none;
+    }
+    .sub-localtion{
+        padding-bottom: 5px;
+    }
+    .team-list li{
+        margin-top: 10px;
+    }
+    .team-item-pic{
+        width: 30%;
+        height: 150px;
+    }
+    .team-item-text{
+        width: 60%;
+    }
+    .team-item-text .link-tel{
+        margin-top: 12px;
+    }
+    .team-item-text .detail{
+        margin-top: 12px;
+    }
+    .team-item-text .lookmore{
+        margin-top: 20px;
+    }
+    .sub-page ul{
+        margin-left: 0;
+    }
+    /*友恒党建*/
+    .yz-text{
+        width: 65%;
+    }
+    .yz-pic{
+        width: 30%;
+        height: 100px;
+        margin-top: 50px;
+    }
+    .yz-item-detail{
+        line-height: 20px;
+    }
+    /*走进友恒*/
+    .lsjs-au{
+        margin-top: 20px;
+    }
+    .lsjs-au p{
+        margin-top: 10px;
+    }
+    .lsjs-pic{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .lsjs-pic li{
+        float: none;
+        width: 80%;
+        margin: 10px auto;
+        height: 195px;
+    }
+    .lsjs-pic li:first-child{
+       margin: 0 auto;
+    }
+    .lsjs-youheng{
+        margin-top: 20px;
+    }
+    .lsjs-youheng h5{
+        margin-top: 20px;
+    }
+    /*联系我们*/
+    .au-list> ul{
+        width: 100%;
+    }
+    .au-map{
+        margin: 50px auto;
+    }
+    /*加入我们*/
+    .join-jieshao{
+        margin-top: 20px;
+    }
+    .join-jieshao p{
+        line-height: 28px;
+    }
+    .join-pic{
+        height: 248px;
+    }
+    .join-guwen ul li{
+        line-height: 28px;
+    }
+    /*招聘职位*/
+    .zp h3{
+        margin: 10px 0;
+    }
+    .zp-link{
+        margin-top: 20px;
+    }
+    .zp-link ul li{
+        float: none;
+        width: 100%;
+    }
+    .zp-list{
+        margin-top: 20px;
+    }
+    .zp-list > li > ol > li{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    /*服务理念*/
+    .fwln-list li h3{
+        margin: 20px auto;
+    }
+    .fwln-pic-list li{
+        width: 30%;
+        margin-right: 5%;
+        height: 74px;
+    }
+    /*友恒荣誉*/
+    .ry-list{
+        margin-top: 20px;
+    }
+    .ry-list li{
+        width: 40%;
+        box-sizing: border-box;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    .ry-item-pic{
+        height: 106px;
+    }
+    .ry-item-text{
+        margin: 10px auto;
+    }
+    .sub-page ul{
+        margin-bottom: 20px;
+    }
+    .sub-page ul:after{
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+    /*视频中心*/
+    .sp-list li{
+        width: 40%;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    .sp-item-pic{
+        height: 100px;
+    }
+    /*友恒案例*/
+
+    .al-list li p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    /*详情*/
+    .sub-yewu-title{
+        width: 80%;
+        margin: 10px auto;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .sub-yewu-info{
+        width: 100%;
+    }
+    .sub-yewu-info li{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .sub-yewu-mianpic{
+        height: 250px;
+    }
+    .sub-yewu-text{
+        margin-top: 20px;
+    }
+    /*团队详情*/
+    .team-person-pic{
+        float: none;
+        width: 60%;
+        margin: 0 auto;
+        height: 308px;
+    }
+    .team-person-text{
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .team-person-text h5{
+        margin-top: 5px;
+    }
+    .team-geren-detail{
+        margin-top: 20px;
+    }
+    /*在线留言*/
+    .ly-body{
+        margin-top: 20px;
+    }
+    .ly-body ul{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ly-body ul li{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .liuyanban .ly-item-input{
+        width: 100%;
+    }
+    .ly-submit{
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+}
+@media screen and (min-width: 769px) {
+    .sj-nav{
+        display: none;
+    }
+    .pho_footer{
+        display: none;
+    }
+}

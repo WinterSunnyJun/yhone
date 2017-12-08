@@ -1,0 +1,979 @@
+/*公共样式*/
+body{
+    overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:inherit;
+    font-weight:500;
+}
+img{
+    width: 100%;
+    height:100%;
+    border:0;
+}
+li{
+    list-style:none;
+}
+input,textarea  {
+    border:none;
+    background:none;
+    appearance:none;
+}
+input,textarea,select{
+    border: 0;
+    outline:none;
+    padding: 0;
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+}
+button,input[type="submit"]{
+    border:none;
+    background:none;
+    appearance:none;
+    outline:none;
+}
+a{
+    text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+i,em{
+    font-style:normal;
+}
+textarea {
+    resize:none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+textarea::-moz-focus-inner{
+    border: 0;
+    padding: 0;
+}
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.w100{
+    width: 100%;
+}
+.w1200{
+    margin: 0 auto;
+    width: 1200px;
+}
+/*首页*/
+/*banner*/
+.banner-wrapper{
+    position: relative;
+}
+.banner-list{
+    height: 470px;
+}
+.banner-list li{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.banner-list li:first-child{
+    display: block;
+}
+.banner-btn{
+    position: absolute;
+    height: 12px;
+    left: 50%;
+    bottom: 55px;
+}
+.banner-btn li{
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #8cc9f4;
+}
+.banner-btn li.active{
+    background: #0a92f8;
+}
+/*top*/
+.top-wrapper{
+    padding-top: 33px;
+    box-shadow: 2px 2px 8px #f1eff0;
+    padding-bottom: 27px;
+}
+.logo{
+    width: 389px;
+    height: 66px;
+}
+.tel{
+    height: 66px;
+}
+.tel-icon{
+    display: inline-block;
+    width: 66px;
+    height: 66px;
+    vertical-align: top;
+}
+.tel-num{
+    display: inline-block;
+    font-size: 40px;
+    color: #f90000;
+    line-height: 66px;
+}
+/*nav*/
+.nav{
+    margin-top: 50px;
+}
+.nav li{
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+.nav li a{
+    color: #333333;
+}
+.nav li.active a{
+    color: #198ada;
+}
+.nav li:hover a{
+    color: #198ada;
+}
+/*我们的动态*/
+.ourDynamics{
+    margin-top: 75px;
+}
+.ourDynamics-title{
+    width: 550px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.ourDynamics-title .ch{
+    font-size: 36px;
+    letter-spacing: 3px;
+    background: url("../img/title-bg.png")no-repeat center center;
+}
+.ourDynamics-title .en{
+    font-size: 18px;
+    color: #666;
+}
+.ourDynamics-bg{
+    margin-top: 60px;
+    height: 845px;
+    background: url("../img/index-bg3.png")no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.ourDynamics-body{
+    margin-top: 120px;
+}
+.yewu-Dynamic{
+    width: 48%;
+}
+.yewu-Dynamic-title{
+    width: 100%;
+    border-bottom: 1px solid #72716f;
+    padding-bottom: 30px;
+}
+.yewu-Dynamic-title h3{
+    float: left;
+    display: inline-block;
+    color: #72716f;
+}
+.yewu-Dynamic-title > a{
+    float: right;
+    color: #198ada;
+    font-size: 14px;
+}
+.title-tiao{
+    width: 105px;
+    height: 5px;
+    background: #72716f;
+}
+.yewu-Dynamic-list{
+    margin-top: 60px;
+}
+.yewu-Dynamic-list .btn li{
+    position: relative;
+    float: left;
+    width: 152px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #666666;
+
+}
+.yewu-Dynamic-list .btn li.active{
+    background: #198ada;
+    color: #ffffff;
+}
+.yewu-Dynamic-list .btn li.active::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom: -16px;
+    width:0;
+    height:0;
+    margin-left: -8px;
+    border-top:16px solid #198ada;
+    border-left:16px solid transparent;
+    border-right:16px solid transparent;
+
+}
+.yewu-Dynamic-list .list{
+    margin-top: 50px;
+}
+.yewu-Dynamic-list .list li{
+    display: none;
+}
+.yewu-Dynamic-list .list li:first-child{
+    display: block;
+}
+.yewu-item{
+    width: 100%;
+    border-bottom: 1px solid #dcdbd7;
+    margin-bottom: 35px;
+}
+.yewu-item>a{
+    color: #666666;
+}
+.yewu-item-title h3:hover {
+    color: #198ada;
+    font-weight: bold;
+}
+.yewu-item-pic{
+    width: 150px;
+    height: 110px;
+}
+.yewu-item-text{
+    width: 410px;
+}
+.yewu-item-icon{
+    float: left;
+    width: 24px;
+    height: 24px;
+    background: url("../img/yewu-item-icon.png")no-repeat;
+    background-size: 100%;
+}
+.yewu-item-title h3{
+    float: left;
+    font-size: 18px;
+    color: #666;
+}
+.yewu-item-title .yewu-look{
+    float: right;
+    color: #666;
+    font-size: 14px;
+}
+.yewu-item-detail{
+    margin-top: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.index-new{
+    width: 48%;
+}
+.index-new-title{
+    width: 100%;
+    border-bottom: 1px solid #72716f;
+    padding-bottom: 30px;
+}
+.index-new-title h3{
+    float: left;
+    display: inline-block;
+    color: #72716f;
+}
+.index-new-title a{
+    float: right;
+    color: #198ada;
+    font-size: 14px;
+}
+.indexNew-list{
+    width: 100%;
+}
+.indexNew-list ul{
+    margin-top: 60px;
+}
+.indexNew-list ul li{
+    width: 100%;
+    margin-bottom: 55px;
+}
+.indexNew-list ul li>a{
+    color: #666666;
+}
+.indexNew-list ul li:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.indexNew-item-time{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #666666;
+}
+.indexNew-data{
+    width: 100%;
+    font-size: 30px;
+}
+.indexNew-item-text{
+    width: 460px;
+}
+.indexNew-item-text h3{
+    font-size: 18px;
+    color: #666666;
+}
+.indexNew-item-content{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 14px;
+}
+.indexNew-item-arrow{
+    visibility: hidden;
+    font-size: 18px;
+    text-align: right;
+}
+.indexNew-list ul li:hover .indexNew-item-time{
+    background: #198ada;
+    color: #ffffff;
+    border-color: #198ada;
+}
+.indexNew-list ul li:hover .indexNew-item-text h3{
+    font-weight: bold;
+    color: #198ada;
+}
+.indexNew-list ul li:hover .indexNew-item-arrow{
+    visibility: visible;
+}
+/*我们的优势*/
+.OurAdv{
+    margin-top: 80px;
+}
+.OurAdv-title{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+.OurAdv-title .ch{
+    font-size: 36px;
+    letter-spacing: 3px;
+    background: url("../img/title-bg.png")no-repeat center center;
+}
+.OurAdv-title .en{
+    font-size: 18px;
+    color: #666666;
+}
+.OurAdv-title-bg{
+    margin-top: 65px;
+    background: url("../img/ouradv-title=bg.png")no-repeat;
+    background-size: 100%;
+}
+.OurAdv-title-left{
+    width: 30%;
+    margin-left:10%;
+}
+.OurAdv-title-right{
+    width: 30%;
+}
+.OurAdv-pic-title{
+    position: relative;
+}
+.OurAdv-title-pic{
+    position: absolute;
+    left: 50%;
+    width: 142px;
+    height: 140px;
+    margin-left: -71px;
+    top: 2px;
+}
+.OurAdv-title-left .en,
+.OurAdv-title-right .en{
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.OurAdv-title-left .ch,
+.OurAdv-title-right .ch{
+    color: #ffffff;
+    font-size: 38px;
+    margin-top: 10px;
+}
+.OurAdv-list{
+    margin-top: 110px;
+    background: url("../img/indexbg1.png")no-repeat;
+    background-size: 100%;
+}
+.OurAdv-icon-list{
+    width: 50%;
+    border-right: 2px dashed #198ada;
+}
+.OurAdv-icon-list li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.ouradv-icon{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+}
+.OurAdv-icon-list li p{
+    margin: 25px 0;
+    font-size: 14px;
+}
+.OurAdv-order-list{
+    width: 48%;
+    padding-left: 50px;
+}
+.OurAdv-order-list li{
+    margin-bottom: 45px;
+}
+.OurAdv-order-list li h3{
+    color: #198ada;
+}
+.OurAdv-order-list li h3 span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.OurAdv-order-list li p{
+    font-size: 14px;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*业务领域*/
+.yewu-Domain{
+    margin-top: 80px;
+}
+.yewu-Domain-title{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+.yewu-Domain-title .ch{
+    font-size: 36px;
+    letter-spacing: 3px;
+    background: url("../img/title-bg.png")no-repeat center center;
+}
+.yewu-Domain-title .en{
+    font-size: 18px;
+    color: #666666;
+}
+.yewu-Domain-list{
+    position: relative;
+    margin-top: 65px;
+}
+.yewu-Domain-list ul{
+    width: 100%;
+}
+.yewu-Domain-list ul li{
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    height: 392px;
+    border: 1px solid #999;
+    text-align: center;
+}
+.yewuDomain-icon{
+    position: relative;
+    width: 88px;
+    height: 76px;
+    margin: 40px auto 0;
+}
+.yewuDomain-icon-act{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.yewuDomain-tiao{
+    margin: 25px auto;
+    width: 40px;
+    height: 1px;
+    background: #000;
+}
+.yewu-Domain-list ul li h5{
+    font-size: 14px;
+}
+.yewu-Domain-list ul li p{
+    width: 80%;
+    margin: 40px auto;
+}
+.yewuDomain-detail{
+    color: #ffffff;
+}
+.yewu-Domain-list ul li:hover{
+    background: #198ada;
+    color: #ffffff;
+}
+.yewu-Domain-list ul li:hover .yewuDomain-tiao {
+    background: #ffffff;
+}
+.yewu-Domain-list ul li:hover .yewuDomain-icon-act{
+    display: block;
+}
+.yewu-Domain-list .bx-controls-direction{
+    display: none;
+}
+.yewu-Domain-list .bx-pager{
+    margin-top: 80px;
+    position: absolute;
+    left: 50%;
+}
+.yewu-Domain-list .bx-pager-item{
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
+.yewu-Domain-list .bx-pager-link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: darkgray;
+
+}
+.yewu-Domain-list .bx-pager-link.active{
+    background: #198ada;
+}
+.yewuDomain-more{
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    width: 110px;
+    height: 35px;
+    box-sizing: border-box;
+    margin-left: -55px;
+    background: url("../img/lookmore.png")no-repeat;
+    z-index: 100;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+}
+.yewuDomain-more-p{
+    display: none;
+}
+.yewuDomain-more-p a{
+    color: #ffffff;
+}
+.yewuDomain-more:hover {
+    background-image: none;
+    background-color: #198ada;
+}
+.yewuDomain-more:hover .yewuDomain-more-p{
+    display: block;
+}
+/*律师介绍*/
+.Lawyer-info{
+    margin-top: 160px;
+}
+.Lawyer-info-title{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+.Lawyer-info-title .ch{
+    font-size: 36px;
+    letter-spacing: 3px;
+    background: url("../img/title-bg.png")no-repeat center center;
+}
+.Lawyer-info-title .en{
+    font-size: 18px;
+    color: #666666;
+}
+.Lawyer-bg{
+    margin-top: 70px;
+    background: url("../img/index-bg3.png")no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.Lawyer-slogan{
+    width: 100%;
+    text-align: center;
+    margin-top: 95px;
+    font-size: 18px;
+}
+.Lawyer-person-info{
+    margin: 45px auto;
+    width: 1050px;
+    height: auto;
+}
+.Lawyer-person-info li{
+    width: 100%;
+    display: none;
+}
+.Lawyer-person-info li:first-child{
+    display: block;
+}
+.Lawyer-person-info li:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.Lawyer-photo{
+    float: left;
+    width: 347px;
+    height: 440px;
+}
+.Lawyer-resume{
+    float: right;
+    width: 610px;
+}
+.Lawyer-resume h3{
+    font-size: 18px;
+    color: #198ada;
+    font-weight: bold;
+}
+.Lawyer-resume p{
+    color: #666666;
+    margin: 20px 0 50px;
+}
+.Layer-detail a{
+    color: #198ada;
+}
+.Lawyer-list{
+    position: relative;
+    margin-top: 55px;
+}
+.Lawyer-list-box{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+.Lawyer-list-box ul{
+    position: absolute;
+}
+.Lawyer-list-box ul li{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 250px;
+}
+.lawyer-name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    color: #ffffff;
+    background: rgba(50,50,50,.5);
+}
+.lawyer-left,
+.lawyer-right{
+    position: absolute;
+    top: 50%;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: -26px;
+    z-index: 100;
+    background: #198ada;
+}
+.lawyer-left{
+    left: -60px;
+}
+.lawyer-right{
+    right: -60px;
+}
+.Lawyer-list ul li:hover::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -40%;
+    top: 15px;
+    width: 80%;
+    height: 90%;
+    border: 2px solid #198ada;
+}
+.lawyer-more{
+    width: 330px;
+    height: 55px;
+    margin: 90px auto 80px;
+    text-align: center;
+    line-height: 55px;
+    border: 1px solid #198ada;
+    box-sizing: border-box;
+}
+.lawyer-more a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #198ada;
+}
+/*合作伙伴*/
+.Cooperative{
+    margin-top: 80px;
+}
+.Cooperative-title{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+.Cooperative-title .ch{
+    font-size: 36px;
+    letter-spacing: 3px;
+    background: url("../img/title-bg.png")no-repeat center center;
+}
+.Cooperative-title .en{
+    font-size: 18px;
+    color: #666666;
+}
+.Cooperative-list{
+    padding-bottom: 50px;
+}
+.Cooperative-list ul{
+    margin-top: 50px;
+}
+.Cooperative-list ul,
+.Cooperative-list ul>li{
+    width: 100%;
+}
+.Cooperative-pic-list{
+    width: 100%;
+}
+.Cooperative-pic-list li{
+    float: left;
+    box-sizing: border-box;
+    width: 200px;
+    height: 102px;
+    padding: 3px;
+
+}
+.Cooperative-pic-list li:hover{
+    box-shadow: 2px 3px 10px #f5f5f5,-2px -3px 10px #f5f5f5;
+    z-index: 2;
+}
+.Cooperative-list .bx-controls-direction{
+    display: none;
+}
+.Cooperative-list .bx-viewport{
+    padding-bottom: 80px;
+}
+.Cooperative-list .bx-pager{
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+}
+.Cooperative-list .bx-pager-item{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+}
+.Cooperative-list .bx-pager-link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #198ada;
+}
+.Cooperative-list .bx-pager-link.active{
+    width: 120%;
+    height: 120%;
+    background: #ffffff;
+    border: 2px solid #198ada;
+}
+/*底部*/
+.footer-wrapper{
+    margin-top: 20px;
+    box-sizing: border-box;
+    background: #4d4d4d;
+    overflow: hidden;
+}
+.footer-info{
+    margin-top: 95px;
+}
+.footer-info a{
+    color: #ffffff;
+}
+.footer-info ul{
+    float: left;
+    width: 160px;
+}
+.footer-info ul li:first-child{
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+.footer-info ul li{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.footer-info .wechat-QRcode{
+    float: left;
+    width: 125px;
+}
+.wechat-QRcode-pic{
+    width: 125px;
+    height: 125px;
+}
+.wechat-QRcode p{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+}
+.link-method{
+    float: left;
+    margin-left: 16px;
+}
+.link-method p{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.link-method p span.red{
+    color: red;
+    font-weight: bold;
+}
+.footer-line{
+    height: 1px;
+    background: #ffffff;
+    margin-top: 50px;
+}
+.copyright{
+    text-align: center;
+    padding: 30px 0;
+    color: #ffffff;
+}
+/*侧边栏*/
+.sidebar{
+    position: fixed;
+    right: 10px;
+    top: 20%;
+    width: 82px;
+    z-index: 10000;
+}
+.sidebar li{
+    position: relative;
+    width: 100%;
+    height: 82px;
+    border-radius: 10px;
+    text-align: center;
+}
+.sidebar li .icon{
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.sidebar li p{
+    color: #ffffff;
+    font-size: 14px;
+}
+.totop .icon{
+    height: 20px!important;
+    margin-bottom: 30px!important;
+}
+.sidebar .liuyan{
+    background: #ff7200;
+}
+.sidebar .zixun{
+    background: #f8a420;
+}
+.sidebar .linktel{
+    background: #f8c512;
+}
+.sidebar .weixin{
+    background: #ff9000;
+}
+.sidebar .totop{
+    background: #5284a9;
+}
+.sidebar-hide{
+    position: absolute;
+    display: none;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background: #198ada;
+    border-radius: 15px;
+    right: 85px;
+    top: 50%;
+    margin-top: -75px;
+}
+.sidebar li:hover .sidebar-hide{
+    display: block;
+}
+.sidebar-hide-tel{
+    margin-top: 20px;
+}
+.sidebar-hide-wechat{
+    width: 80%;
+    height: 80%;
+    margin: 15px auto;
+}
+/*弹窗*/
+.pop{
+    width: 472px;
+    height: 397px;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/pop.png")no-repeat;
+    display: none;
+    z-index: 10000;
+}
+.pop-close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    color: #ffffff;
+}
+.pop-text{
+    width: 300px;
+    height: 120px;
+    margin-top: 200px;
+    margin-left: 160px;
+}
+.pop-text .ch{
+    font-size: 20px;
+}
+.pop-text .num{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+}
